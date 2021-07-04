@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Online Voting System - Regestration</title>
+        <link rel="stylesheet" href="../css/stylsheet.css">
+    </head>
+    <body>
+	<style>
+	  #address{
+	      width:30%;
+	  }
+	  #imagepart{
+	      border:2px solid black;
+		  border-radius:5px;
+		  padding:10px;
+		  width:30%;  
+	  }
+	  #rol{
+	      border:2px solid black;
+		  border-radius:5px;
+		  padding:10px;
+		  width:30%;
+	  }
+	  #rol select{
+	  border-radius:5px;
+	  padding:10px;
+	  }
+	
+	</style>
+	<center>
+	    <div id="headerSection">
+        <h1>Online Voting System</h1>
+		</div>
+        <hr>
+		<div id="bodySection">
+        <h3>Regestration</h3>
+        <form action="../api/regester.php" method="POST" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter Name ">
+            <input type="number" name="mobile" placeholder="Enter Mobile No. "><br><br>
+            <input type="password" name="password" placeholder=" Password ">
+            <input type="password" name="cpassword" placeholder=" Confirm password "><br><br>
+            <input id="address" type="text" name="address" placeholder="Address"><br><br>
+			
+			<div id="imagepart">
+			Upload image: <input type="file" name="photo"><br><br>
+			</div>
+           <br>
+		   <div id="rol">
+            Select role:<select name="role">
+                <option value="1">Voter</option>
+                <option value="2">Candidate</option>
+           </select>
+		   </div>
+		   
+		   <br>
+		   
+		   <input style="padding:5px;
+	                  font-size:15px; 
+	                  border-radius:5px; 
+	                  background-color:#3498db; -->
+                      color:white;" type="submit" name="reg" value="Register">
+    
+        </form>
+		
+		</div>
+		</center>
+
+    </body>
+</html>
